@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github-ssh"
+      fetch="git@github.com:PixelOS-OnePlus-9-Series/"
+      sync-c="true"
+      sync-tags="false"
+      revision="14.0" />
+  
+  <remove-project name="vendor_aosp" path="vendor/aosp" />
+  <project name="vendor_aosp" path="vendor/aosp" remote="github-ssh" />
+  
+  <project name="android_device_oneplus_lemonadep" path="device/oneplus/lemonadep" remote="github-ssh" />
+  <project name="android_device_oneplus_sm8350-common" path="device/oneplus/sm8350-common" remote="github-ssh" />
+
+  <project name="android_hardware_oplus" path="hardware/oplus" remote="github-ssh" />
+
+  <!-- <project name="LineageOS/android_kernel_oneplus_sm8350" path="kernel/oneplus/sm8350" remote="LineageOS" revision="lineage-21" /> -->
+  <project name="android_kernel_oneplus_sm8350" path="kernel/oneplus/sm8550-matrixx" remote="github-ssh" />
+  
+  <project name="vendor_oplus_euicc" path="vendor/oplus/euicc" remote="github-ssh" />
+  <project name="proprietary_vendor_oplus_camera" path="vendor/oplus/camera" remote="github-ssh" />
+  <project name="proprietary_vendor_oneplus_lemonadep" path="vendor/oneplus/lemonadep" remote="github-ssh" />
+  <project name="proprietary_vendor_oneplus_sm8350-common" path="vendor/oneplus/sm8350-common" remote="github-ssh" />
+</manifest>
